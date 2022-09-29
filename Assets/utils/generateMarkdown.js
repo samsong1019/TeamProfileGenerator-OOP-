@@ -1,5 +1,5 @@
 function generateMarkdown(data) {
-    return `<!DOCTYPE html>
+  return `<!DOCTYPE html>
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
@@ -22,54 +22,13 @@ function generateMarkdown(data) {
         </header>
         <!-- top div controls the page overall -->
         <div class="d-flex flex-wrap justify-content-center">
-          <div class="card m-2" style="width: 18rem">
-            <div class="card-body bg-primary">
-              <h5 class="card-title">Sam Song</h5>
-              <h6 class="card-title">Manager</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">ID: 1234</li>
-              <li class="list-group-item">
-                Email: <a href="#" class="card-link">samuelsong18@gmail.com</a>
-              </li>
-              <li class="list-group-item">
-                Office Number: 678-123-4567
-              </li>
-            </ul>
-          </div>
-          <div class="card m-2" style="width: 18rem">
-            <div class="card-body bg-success">
-              <h5 class="card-title">Sam Song</h5>
-              <h6 class="card-title">Engineer</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">ID: 1234</li>
-              <li class="list-group-item">
-                Email: <a href="#" class="card-link">samuelsong18@gmail.com</a>
-              </li>
-              <li class="list-group-item">
-                GitHub: <a href="#" class="card-link">samsong1019</a>
-              </li>
-            </ul>
-          </div>
-          <div class="card m-2" style="width: 18rem">
-            <div class="card-body bg-danger">
-              <h5 class="card-title">Brandom Kim</h5>
-              <h6 class="card-title">Intern</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">ID: 1234</li>
-              <li class="list-group-item">
-                Email: <a href="#" class="card-link">brandomKim@gmail.com</a>
-              </li>
-              <li class="list-group-item">
-                School: Massachusetts Institute of Technology
-              </li>
-            </ul>
-          </div>
+        // 
+
+        INSERT ALL THE OTHER MARKDOWNS HERE!!!!!!
+
+        //
         </div>
       </body>
-    </html>`
-        
+    </html>`;
 }
 module.exports = generateMarkdown;

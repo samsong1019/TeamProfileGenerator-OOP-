@@ -1,10 +1,14 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
+const managerMarkdown = require("./utils/managerMarkdown");
+const engineerMarkdown = require("./utils/engineerMarkdown");
+const internMarkdown = require("./utils/internMarkdown");
 const path = require("path");
 const { writeFile } = require("fs/promises");
 
 const questions = [
+  // MANAGER INPUTS
   {
     type: "input",
     name: "manager",
@@ -57,6 +61,7 @@ const questions = [
       }
     },
   },
+  // LIST INPUT
   {
     type: "list",
     name: "menu",
@@ -71,6 +76,7 @@ const questions = [
       }
     },
   },
+  // ENGINEER INPUTS!!
   {
     type: "input",
     name: "engineerName",
@@ -115,6 +121,7 @@ const questions = [
     name: "github",
     message: "What is the engineers GitHub username?",
   },
+  // INTERN INPUTS!!!
   {
     type: "input",
     name: "internName",
@@ -178,7 +185,10 @@ function writetoFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then((inquirerAnswers) => {
     console.log("Generating roster... Please wait...");
-    writetoFile("./index.html", generateMarkdown({ ...inquirerAnswers }));
+    writetoFile("./index.html", internMarkdown({ ...inquirerAnswers }));
+    writetoFile("./index.html", engineerMarkdown({ ...inquirerAnswers }));
+    writetoFile("./index.html", managerMarkdown({ ...inquirerAnswers }));
+    writetoFile("./index.html", generateMarkdown({ ...inquirerAnswers })); 
   });
 }
 
