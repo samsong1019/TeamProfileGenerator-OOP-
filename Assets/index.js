@@ -1,11 +1,13 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMarkdown = require("./utils/generateMarkdown");
-const managerMarkdown = require("./utils/managerMarkdown");
-const engineerMarkdown = require("./utils/engineerMarkdown");
-const internMarkdown = require("./utils/internMarkdown");
 const path = require("path");
-const { writeFile } = require("fs/promises");
+const Manager = require("./utils/manager");
+const PrincipalSoftwareEngineer = require("./utils/principalSoftwareEngineer");
+const SeniorSoftwareEngineer = require("./utils/seniorSoftwareEngineer");
+const SoftwareEngineer = require("./utils/softwareEngineer");
+const Intern = require("./utils/intern");
+const generateHtml = require("./utils/generateMarkup");
+const fullTeam = [];
 
 const questions = [
   // MANAGER INPUTS
@@ -188,7 +190,7 @@ function init() {
     writetoFile("./index.html", internMarkdown({ ...inquirerAnswers }));
     writetoFile("./index.html", engineerMarkdown({ ...inquirerAnswers }));
     writetoFile("./index.html", managerMarkdown({ ...inquirerAnswers }));
-    writetoFile("./index.html", generateMarkdown({ ...inquirerAnswers })); 
+    writetoFile("./index.html", generateMarkdown({ ...inquirerAnswers }));
   });
 }
 
