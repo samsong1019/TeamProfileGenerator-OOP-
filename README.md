@@ -51,4 +51,4 @@ To use test the application:
 ```
 Run the test through npm run test
 ```
-![](https://github.com/samsong1019/TeamProfileGenerator-OOP-/blob/main/Assets/GIFT.gif/demogif.gif)
+![]https://github.com/samsong1019/TeamProfileGenerator-OOP-/blob/main/Assets/GIFT.gif/demogif.gif
