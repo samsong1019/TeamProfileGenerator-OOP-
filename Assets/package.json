@@ -1,6 +1,15 @@
 {
-  "dependencies": {
-    "init": "^0.1.2",
-    "inquirer": "^8.2.4"
+  "name": "04-ins_organizing-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0"
   }
 }
+

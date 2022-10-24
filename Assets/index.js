@@ -1,13 +1,13 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
-const Manager = require("./utils/manager");
-const PrincipalSoftwareEngineer = require("./utils/principalSoftwareEngineer");
-const SeniorSoftwareEngineer = require("./utils/seniorSoftwareEngineer");
-const SoftwareEngineer = require("./utils/softwareEngineer");
-const Intern = require("./utils/intern");
-const mergeAllRoles = require("./utils/generateMarkup");
-const outputDirectory = path.resolve(__dirname, "Team");
+const Manager = require("./lib/manager");
+const PrincipalSoftwareEngineer = require("./lib/principalSoftwareEngineer");
+const SeniorSoftwareEngineer = require("./lib/seniorSoftwareEngineer");
+const SoftwareEngineer = require("./lib/softwareEngineer");
+const Intern = require("./lib/intern");
+const mergeAllRoles = require("./lib/generateMarkup");
+const outputDirectory = path.resolve(__dirname, "dist");
 const outputPath = path.join(outputDirectory, "index.html");
 const fullTeam = [];
 
